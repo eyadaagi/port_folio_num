@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Portfolio numérique – Architecture & électronique">
+<title>Architecture & électronique · Portfolio numérique</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<script>try{var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<div class="blobs" aria-hidden="true"><span></span><span></span><span></span></div>
+<header class="site"><div class="bar">
+<a class="logo" href="../index.html"><b>PN</b> Portfolio</a>
+<nav id="nav" aria-label="Navigation principale"><ul>
+<li><a href="../index.html">Accueil</a></li>
+<li class="group"><button class="gb" aria-haspopup="true">Digital Skills</button><ul class="sub">
+<li><a href="../digital-skills/cybersecurite.html">Cybersécurité</a></li>
+<li><a href="../digital-skills/prompt-engineering.html">Prompt engineering</a></li>
+<li><a href="../digital-skills/creation-contenu.html">Création de contenu</a></li></ul></li>
+<li class="group"><button class="gb" aria-haspopup="true">Développement</button><ul class="sub">
+<li><a href="../developpement/python.html">Python</a></li>
+<li><a href="../developpement/langage-c.html">Langage C</a></li>
+<li><a href="../developpement/algorithmique.html">Algorithmique</a></li></ul></li>
+<li class="group"><button class="gb" aria-haspopup="true">Systèmes</button><ul class="sub">
+<li><a href="../systemes/systemes-exploitation.html">Systèmes d'exploitation</a></li>
+<li><a href="../systemes/architecture-electronique.html">Architecture &amp; électronique</a></li></ul></li>
+</ul></nav>
+<button id="theme" class="icon-btn" aria-label="Changer de thème">🌙</button>
+<button id="burger" class="icon-btn" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+</div></header>
+<main>
+<div class="pagehead"><div class="crumb">Systèmes</div><h1>Architecture & électronique</h1><p>De l'ordinateur au transistor : tout est 0 et 1.</p></div>
+<h2>Architecture d'un ordinateur</h2><svg viewBox="0 0 640 300" role="img" aria-label="Schéma : processeur, mémoire et entrées/sorties reliés par des bus"><rect class="bx" x="20" y="20" width="170" height="90" rx="14"/><text x="105" y="60" text-anchor="middle" font-weight="700" font-size="18">Processeur</text><text x="105" y="85" text-anchor="middle" font-size="13">UC + UAL + registres</text>
+<rect class="bx" x="235" y="20" width="170" height="90" rx="14"/><text x="320" y="60" text-anchor="middle" font-weight="700" font-size="18">Mémoire</text><text x="320" y="85" text-anchor="middle" font-size="13">RAM (temporaire)</text>
+<rect class="bx" x="450" y="20" width="170" height="90" rx="14"/><text x="535" y="60" text-anchor="middle" font-weight="700" font-size="18">Entrées / Sorties</text><text x="535" y="85" text-anchor="middle" font-size="13">clavier, écran, disque</text>
+<path class="ln" d="M105 110v60M320 110v60M535 110v60"/><rect x="20" y="170" width="600" height="34" rx="17" fill="#ff4fa3" opacity=".85"/><text x="320" y="193" text-anchor="middle" fill="#fff" style="fill:#fff" font-weight="700">Bus : données · adresses · contrôle</text>
+<text x="320" y="260" text-anchor="middle" font-size="14">Le processeur lit les instructions en mémoire, les exécute, et dialogue avec les périphériques.</text></svg>
+<h2>Systèmes de numération</h2>
+<p>Binaire (base 2), décimal (base 10), hexadécimal (base 16). Essaie : modifie un champ, les autres se mettent à jour.</p>
+<div class="field" id="conv"><div><label for="dec">Décimal</label><input id="dec" inputmode="numeric"></div><div><label for="bin">Binaire</label><input id="bin"></div><div><label for="hex">Hexadécimal</label><input id="hex"></div></div>
+<p class="crumb">Exemple : 42 = 101010₂ = 2A₁₆</p>
+<h2>Portes logiques</h2>
+<div id="gates"><p>
+<button class="toggle" data-gate="AND" aria-pressed="true">AND</button> <button class="toggle" data-gate="OR" aria-pressed="false">OR</button> <button class="toggle" data-gate="XOR" aria-pressed="false">XOR</button> <button class="toggle" data-gate="NAND" aria-pressed="false">NAND</button> <button class="toggle" data-gate="NOR" aria-pressed="false">NOR</button> <button class="toggle" data-gate="NOT" aria-pressed="false">NOT</button></p>
+<div class="grid"><div class="scroll"><table id="truth"></table></div>
+<div class="card"><h3>Simulateur</h3><p><button class="toggle" id="ta" aria-pressed="false">A = 0</button> <button class="toggle" id="tb" aria-pressed="false">B = 0</button></p><p><span class="lamp" id="lamp"></span> <strong id="res"></strong></p></div></div></div>
+<aside class="ia-card reveal"><h2>🤖 Transparence IA</h2><dl>
+<dt>Outils utilisés</dt><dd><span class="todo">Liste tes outils (Claude, ChatGPT, Perplexity, Canva…)</span></dd>
+<dt>Rôle de l'IA</dt><dd><span class="todo">Ce que l'outil a fait (explications, correction, idées…)</span></dd>
+<dt>Ce que j'ai fait moi-même</dt><dd><span class="todo">Écriture, vérifications, corrections, choix</span></dd>
+<dt>Sources vérifiées</dt><dd><span class="todo">Liens</span></dd></dl></aside>
+</main>
+<footer class="site">© 2026 <span class="todo">Prénom Nom</span> · Portfolio numérique · Hébergé sur GitHub Pages</footer>
+<script src="../js/script.js"></script>
+</body></html>

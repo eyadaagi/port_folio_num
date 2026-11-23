@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Portfolio numérique – Accueil">
+<title>Accueil · Portfolio numérique</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>try{var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<div class="blobs" aria-hidden="true"><span></span><span></span><span></span></div>
+<header class="site"><div class="bar">
+<a class="logo" href="index.html"><b>PN</b> Portfolio</a>
+<nav id="nav" aria-label="Navigation principale"><ul>
+<li><a href="index.html" aria-current="page">Accueil</a></li>
+<li class="group"><button class="gb" aria-haspopup="true">Digital Skills</button><ul class="sub">
+<li><a href="digital-skills/cybersecurite.html">Cybersécurité</a></li>
+<li><a href="digital-skills/prompt-engineering.html">Prompt engineering</a></li>
+<li><a href="digital-skills/creation-contenu.html">Création de contenu</a></li></ul></li>
+<li class="group"><button class="gb" aria-haspopup="true">Développement</button><ul class="sub">
+<li><a href="developpement/python.html">Python</a></li>
+<li><a href="developpement/langage-c.html">Langage C</a></li>
+<li><a href="developpement/algorithmique.html">Algorithmique</a></li></ul></li>
+<li class="group"><button class="gb" aria-haspopup="true">Systèmes</button><ul class="sub">
+<li><a href="systemes/systemes-exploitation.html">Systèmes d'exploitation</a></li>
+<li><a href="systemes/architecture-electronique.html">Architecture &amp; électronique</a></li></ul></li>
+</ul></nav>
+<button id="theme" class="icon-btn" aria-label="Changer de thème">🌙</button>
+<button id="burger" class="icon-btn" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+</div></header>
+<main>
+
+<section class="hero">
+<div><p class="crumb"><span class="todo">Filière</span> · 1ère année</p>
+<h1>Salut, moi c'est <span class="grad todo">Prénom</span></h1>
+<p class="lead">Je construis mon <strong>portfolio numérique</strong> : <span id="typed" class="cursor" data-words='["cybersécurité","prompt engineering","Python & C","algorithmique","systèmes & électronique"]'></span></p>
+<p>Ce site rassemble mes réalisations de l'année, module par module. Chaque production indique les outils d'IA utilisés et ce que j'ai fait moi-même.</p>
+<p><a class="btn" href="#modules">Découvrir mes modules</a> <a class="btn ghost" href="digital-skills/cybersecurite.html">Tester mon quiz</a></p></div>
+<div class="avatar" role="img" aria-label="Avatar avec les initiales du propriétaire du site"><div>PN</div></div>
+</section>
+<h2 id="modules">Mes modules</h2>
+<div class="grid"><a class="card reveal" href="digital-skills/cybersecurite.html"><div class="emo" aria-hidden="true">🛡️</div><h3>Cybersécurité</h3><span class="tag">Digital Skills</span><p>Menaces, bonnes pratiques et quiz pour tester ses réflexes.</p></a><a class="card reveal" href="digital-skills/prompt-engineering.html"><div class="emo" aria-hidden="true">✨</div><h3>Prompt engineering</h3><span class="tag">Digital Skills</span><p>Bien parler à une IA : cas pratiques et bibliothèque de prompts.</p></a><a class="card reveal" href="digital-skills/creation-contenu.html"><div class="emo" aria-hidden="true">🎬</div><h3>Création de contenu</h3><span class="tag">Digital Skills</span><p>Avatar, vidéo, podcast, carte mentale et PowerPoint interactif.</p></a><a class="card reveal" href="developpement/python.html"><div class="emo" aria-hidden="true">🐍</div><h3>Python</h3><span class="tag">Développement</span><p>Trois mini-projets expliqués pas à pas.</p></a><a class="card reveal" href="developpement/langage-c.html"><div class="emo" aria-hidden="true">⚙️</div><h3>Langage C</h3><span class="tag">Développement</span><p>Trois programmes et une comparaison Python / C.</p></a><a class="card reveal" href="developpement/algorithmique.html"><div class="emo" aria-hidden="true">🧩</div><h3>Algorithmique</h3><span class="tag">Développement</span><p>Pseudo-code, exemples et animation d'un tri.</p></a><a class="card reveal" href="systemes/systemes-exploitation.html"><div class="emo" aria-hidden="true">🖥️</div><h3>Systèmes d'exploitation</h3><span class="tag">Systèmes</span><p>Rôle d'un OS, Windows / Linux / macOS, terminal.</p></a><a class="card reveal" href="systemes/architecture-electronique.html"><div class="emo" aria-hidden="true">🔌</div><h3>Architecture & électronique</h3><span class="tag">Systèmes</span><p>Schéma d'un ordinateur, binaire, portes logiques.</p></a></div>
+<h2>À propos du projet</h2>
+<p>Un site hébergé sur GitHub Pages pour valider mes acquis, apprendre à utiliser l'IA de façon responsable et critique, et préparer mes futures candidatures de stage.</p>
+
+</main>
+<footer class="site">© 2026 <span class="todo">Prénom Nom</span> · Portfolio numérique · Hébergé sur GitHub Pages</footer>
+<script src="js/script.js"></script>
+</body></html>
